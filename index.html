@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intro component with sign up form</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,600&display=swap"
+    rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <main id="card">
+    <div class="description">
+      <h1>
+        Learn to code by watching others
+      </h1>
+      <p>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+        understanding how developers think is invaluable.
+      </p>
+    </div>
+    <div class="item2">
+      <p class="free">
+        <span style="font-weight: 500;color: white;">Try it free 7 days</span> then $20/mo.
+        thereafter
+      </p>
+      <div class="form">
+        <form>
+          <input type="text" value="" placeholder="First Name" /> <br />
+          <img src="./images/icon-error.svg" alt="error" class="hide">
+          <p class="error-message hide">First Name cannot be empty.</p>
+
+          <input type="text" value="" placeholder="Last Name" /> <br />
+          <img src="./images/icon-error.svg" alt="error" class="hide">
+          <p class="error-message hide">Last Name cannot be empty.</p>
+
+          <input type="text" value="" placeholder="Email Address" /> <br />
+          <img src="./images/icon-error.svg" alt="error" class="hide">
+          <p class="error-message hide">Looks like this is not an email</p>
+
+          <input type="password" value="" placeholder="Password" /><br />
+          <img src="./images/icon-error.svg" alt="error" class="hide">
+          <p class="error-message hide">Password cannot be empty.</p>
+
+          <input type="button" value="Claim your free trial" id="claim" />
+
+          <p class="terms">
+            By clicking the button, you are agreeing to our
+            <a href='#'>Terms and Services</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="./app.js"></script>
+</body>
+
+</html>
